@@ -53,6 +53,8 @@
           <div class="field">
             <label for="participant-name">Имя участника</label>
             <input
+              required
+              minlength="2"
               id="participant-name"
               name="name"
               type="text"
@@ -65,9 +67,10 @@
           <div class="field">
             <label for="participant-email">Email для подтверждения</label>
             <input
+              required
               id="participant-email"
               name="email"
-              type="text"
+              type="email"
               placeholder="anna@example.com"
               autocomplete="email"
             />
@@ -76,7 +79,7 @@
 
           <div class="field">
             <label for="workshop-topic">Тема мастерской</label>
-            <select id="workshop-topic" name="topic">
+            <select id="workshop-topic" name="topic" required>
               <option value="">Выберите тему</option>
               <option value="Городская мастерская">Городская мастерская</option>
               <option value="Доступные интерфейсы">Доступные интерфейсы</option>
